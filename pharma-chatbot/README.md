@@ -1,16 +1,109 @@
-# React + Vite
+# LifeScience Intellipedia – Pharmaceutical Assistant
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple pharmaceutical information assistant built with React. The application provides a chat-based interface along with dedicated sections for supplier information and product summaries.
 
-Currently, two official plugins are available:
+## Live Demo
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+[View Live Application](https://lifescienceintellipedia.netlify.app/)
 
-## React Compiler
+## GitHub Repository
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+[View Source Code](https://github.com/Vishal-16072000/lifescience-intellipedia)
 
-## Expanding the ESLint configuration
+## Features
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### 1. Chat Assistant
+- Interactive chat interface for user queries.
+- Displays responses inside the conversation.
+- Loading indicator while generating responses.
+- Provides relevant navigation actions when additional details are available.
+
+### 2. Supplier Data
+- Displays supplier information in a structured table.
+- Search suppliers by company, country, or type.
+- Filter suppliers by country.
+- Pagination for easier data browsing.
+
+### 3. Product Summary
+- Product overview with categorized information.
+- Four sections:
+  - API Data
+  - FDF Data
+  - FDF Combination
+  - Commercial Information
+- Reusable table component for displaying structured data.
+
+## Tech Stack
+
+- React
+- JavaScript (ES6+)
+- Tailwind CSS
+- React Router
+- Vite
+- Lucide React
+
+## Getting Started
+
+To run the project locally:
+
+**1. Clone the repository**
+
+```bash
+git clone https://github.com/Vishal-16072000/lifescience-intellipedia.git
+```
+
+**2. Navigate to the project directory**
+
+```bash
+cd lifescience-intellipedia/pharma-chatbot
+```
+
+**3. Install dependencies**
+
+```bash
+npm install
+```
+
+**4. Start the development server**
+
+```bash
+npm run dev
+```
+
+The application will be available at the local URL shown in your terminal.
+
+**5. Create a production build**
+
+```bash
+npm run build
+```
+
+## Project Structure
+
+```text
+pharma-chatbot/
+├── public/
+├── src/
+│   ├── assets/
+│   ├── components/
+│   │   ├── layout/
+│   │   └── tables/
+│   ├── context/
+│   ├── data/
+│   ├── pages/
+│   ├── services/
+│   ├── App.jsx
+│   ├── App.css
+│   └── index.css
+├── index.html
+├── package.json
+└── vite.config.js
+```
+
+## Note on Data
+
+The current implementation uses sample/mock data to demonstrate the application's interface and functionality. The supplier and product information is illustrative and is not connected to a live pharmaceutical database.
+
+## Objective
+
+The goal of this project is to provide a clean and easy-to-use interface for exploring pharmaceutical supplier information, viewing product summaries, and interacting with a chat-based assistant.
