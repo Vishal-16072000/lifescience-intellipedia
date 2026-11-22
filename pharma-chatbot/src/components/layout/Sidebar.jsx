@@ -11,7 +11,7 @@ const navigation = [
 
 function Sidebar() {
   return (
-    <aside className=" w-72 min-h-screen bg-blue-50 text-white flex flex-col p-5">
+    <aside className=" hidden md:block w-72 min-h-screen bg-blue-50 text-white md:flex flex-col p-5">
       <div className="flex items-center gap-3 mb-10">
         <img src={logo} className="w-48"/>
       </div>
